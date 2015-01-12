@@ -2,12 +2,11 @@ process.env.NODE_ENV = 'test';
 
 var expect = require('chai').expect;
 
-var adhere = require('../lib/core');
+var adhere = require('../lib/adhere');
 
-function defined(value, key, object) {
-	if (value === undefined) throw Error('Expected value to be defined');
-	return value;
-}
+var is = require('../lib/is');
+
+var defined = require('../lib/expect').defined;
 
 function checkPassword(value, index, container) {
 	if (value !== container['password']) throw new Error('Expected same passwords');

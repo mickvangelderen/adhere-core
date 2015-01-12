@@ -57,7 +57,7 @@ describe('lib/compose.js', function() {
 		});
 
 		it('should accept an array of transforms', function() {
-			var f = compose.pipe([compose.each(fshift), compose.each(fshift)]);
+			var f = compose.each([fshift, fshift]);
 			expect(f([1, 2, 3])).to.deep.equal([3, 1, 2]);
 		});
 	});
