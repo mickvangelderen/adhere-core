@@ -1,0 +1,28 @@
+{
+  "name": "adhere",
+  "version": "0.1.0",
+  "description": "Make objects adhere to a specification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mickvangelderen/adhere"
+  },
+  "keywords": [
+    "adhere",
+    "object",
+    "specification",
+    "validate"
+  ],
+  "author": "Mick van Gelderen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mickvangelderen/adhere/issues"
+  },
+  "homepage": "https://github.com/mickvangelderen/adhere",
+  "devDependencies": {
+    "chai": "^1.10.0"
+  }
+}
