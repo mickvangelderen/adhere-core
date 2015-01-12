@@ -2,9 +2,7 @@ process.env.NODE_ENV = 'test';
 
 var expect = require('chai').expect;
 
-var adhere = require('../lib/adhere');
-var compose = require('../lib/compose');
-var validate = require('../lib/validate');
+var adhere = require('../lib/core');
 
 function defined(value, key, object) {
 	if (value === undefined) throw Error('Expected value to be defined');
@@ -36,7 +34,7 @@ describe('lib/adhere.js', function() {
 
 	it('should leave out properties that are not in the protocol', function() {
 		var validator = adhere({
-			slug: compose.pipe([ defined, slug ]),
+			slug: [ defined, slug ],
 			title: defined,
 			date: defined
 		});
@@ -48,18 +46,4 @@ describe('lib/adhere.js', function() {
 		});
 	});
 
-	it('x', function() {
-
-		var value = {
-			tags: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }]
-		};
-
-		expect(adhere({
-			tags: compose.pipe([
-				compose.map(adhere({ id: validate.number })),
-				compose.filter(function(tag) { return tag.id < 3; })
-			])
-		})(value)).to.deep.equal(value);
-
-	});
 });
