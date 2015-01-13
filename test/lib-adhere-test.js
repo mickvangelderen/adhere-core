@@ -4,12 +4,8 @@ var expect = require('chai').expect;
 
 var adhere = require('../lib/adhere');
 
-var is = require('../lib/is');
-
-var defined = require('../lib/expect').defined;
-
-function checkPassword(value, index, container) {
-	if (value !== container['password']) throw new Error('Expected same passwords');
+function defined(value) {
+	if (value === undefined) throw new Error('Expected value to be defined');
 	return value;
 }
 

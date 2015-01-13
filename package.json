@@ -1,5 +1,5 @@
 {
-  "name": "adhere",
+  "name": "adhere-core",
   "version": "0.1.0",
   "description": "Make objects adhere to a specification",
   "main": "index.js",
@@ -8,13 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mickvangelderen/adhere"
+    "url": "git@github.com:mickvangelderen/adhere-core"
   },
   "keywords": [
     "adhere",
     "object",
     "specification",
-    "validate"
+    "validate",
+    "schema"
   ],
   "author": "Mick van Gelderen",
   "license": "ISC",
