@@ -4,6 +4,8 @@
   "description": "Make objects adhere to a specification",
   "main": "index.js",
   "scripts": {
+    "build": "mkdirp dist && browserify index.js --standalone adhere --outfile dist/bundle.js",
+    "build-debug": "mkdirp dist && browserify index.js --standalone adhere --outfile dist/bundle.js --debug",
     "test": "mocha **/*.test.js"
   },
   "repository": {
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/mickvangelderen/adhere",
   "devDependencies": {
-    "chai": "^1.10.0"
+    "chai": "^1.10.0",
+    "mkdirp": "^0.5.1"
   }
 }
