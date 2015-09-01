@@ -6,7 +6,7 @@
   "scripts": {
     "build": "mkdirp dist && browserify index.js --standalone adhere --outfile dist/bundle.js",
     "build-debug": "mkdirp dist && browserify index.js --standalone adhere --outfile dist/bundle.js --debug",
-    "test": "mocha **/*.test.js"
+    "test": "mocha lib/**/*.test.js"
   },
   "repository": {
     "type": "git",
