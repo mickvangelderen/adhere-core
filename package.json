@@ -1,6 +1,6 @@
 {
   "name": "adhere-core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Make objects adhere to a specification",
   "main": "index.js",
   "scripts": {
