@@ -1,4 +1,6 @@
 var adhere = module.exports = require('./lib/adhere');
 
-adhere.compose = require('./lib/compose');
+adhere.clone = require('./lib/clone');
+adhere.each = require('./lib/each');
+adhere.pipe = require('./lib/pipe');
 adhere.is = require('./lib/is');

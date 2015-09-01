@@ -42,16 +42,21 @@ module.exports = [
 		isObject: true
 	},{
 		value: new Date(),
-		name: 'new Date()'
+		name: 'new Date()',
+		isDate: true
+	},{
+		value: /regexp/,
+		name: '/regexp/',
+		isRegExp: true
 	},{
 		value: [],
 		name: '[]',
 		isArray: true
 	},{
 		value: '',
-		name: ''
+		name: "''"
 	},{
 		value: 'string',
-		name: 'string'
+		name: "'string'"
 	}
 ]
