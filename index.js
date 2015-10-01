@@ -1,4 +1,6 @@
-var adhere = module.exports = require('./lib/adhere');
-
-adhere.is = require('./lib/is');
-adhere.pipe = require('./lib/pipe');
+module.exports = {
+	array: require('./lib/array'),
+	is: require('./lib/is'),
+	object: require('./lib/object'),
+	pipe: require('./lib/pipe')
+}
