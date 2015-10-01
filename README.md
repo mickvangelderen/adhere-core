@@ -151,8 +151,8 @@ function string(value) {
 
 While it would have been possible for adhere to accept these kinds of functions, it limits the possibilities. Adhere accepts exception based validators of which the return value replaces the passed value. I like to call these functions [transforms](#transforms). With [transforms](#transforms) we can:
 
-1. We can throw informative errors. 
-2. We can change the value. 
+1. throw informative errors and
+2. change the value. 
 
 See the following [transform](#transforms) for example:
 
